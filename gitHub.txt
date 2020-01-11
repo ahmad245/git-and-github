@@ -72,5 +72,6 @@ git stash apply // return the latest  stash without remove id
 git stash drop // remove the latest stash 
 git stash drop stash@{index} // remove the  stash with index  ex:git stash drop stash@{0}
 git stash show : for show the latest stash 
-//
+git stash show stash@{index}
+git stash clear // remove all stash 
 

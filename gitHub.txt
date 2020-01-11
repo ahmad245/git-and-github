@@ -44,3 +44,9 @@ git rm file name
 touch .gitignore 
 and write the name of file Unwanted to tracks
 *.log Unwanted all file with .log
+
+// history 
+git log --oneline --graph --decorate --all
+
+// difference  between the recently changes in working directory  and the HEAD position , HEAD :last commit in the branch 
+git diff

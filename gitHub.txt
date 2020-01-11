@@ -36,5 +36,7 @@ git congig --global --list all the alias and config global
 
 // rename file
 git mv fileName1 fileName2
- 
+
+// remove file
+git rm file name
 

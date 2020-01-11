@@ -1,0 +1,36 @@
+command line
+pwd :current path
+mkdir :for create folder 
+touch :for create file 
+rm -rf name of folder : remove folder and files -rf recurcevly
+rm name of file : remove file 
+ls 
+ls -al
+cat file name : edit file 
+
+
+//gitHub basic  Starting with Existing Project
+git init 
+git status 
+git add fileName or *
+git  git commit -m "name of commit"
+
+// commit Details
+git log : for show Commit Details : id of commit , Author and Date
+git show show Commit Details : id of commit , Author , Date and all changes 
+
+// files tracks
+git status :  all files that  modified or created  and untrack files
+git ls-files : if I do not add  file to stage earia will show  all files tracks but  not the new file was created
+
+// Backing Out Changes unstage
+git reset file name 
+git reset HEAD file name
+
+// remove modified from file in local 
+git checkout -- file name
+
+// alias
+git config --global alias.status "st" 
+git congig --global --list all the alias and config global
+

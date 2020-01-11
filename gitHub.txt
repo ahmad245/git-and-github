@@ -40,4 +40,7 @@ git mv fileName1 fileName2
 // remove file
 git rm file name
 
-hh
+//027 Excluding Unwanted Files
+touch .gitignore 
+and write the name of file Unwanted to tracks
+*.log Unwanted all file with .log

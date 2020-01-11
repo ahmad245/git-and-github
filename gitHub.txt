@@ -54,3 +54,10 @@ git diff
 //branch
 git branch 
 git checkout -b name of new branch
+
+// merge
+git checkout master 
+git merge new branch
+
+// delete branch after merge 
+git branch -d new branch 

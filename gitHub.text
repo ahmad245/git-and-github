@@ -34,3 +34,7 @@ git checkout -- file name
 git config --global alias.status "st" 
 git congig --global --list all the alias and config global
 
+// rename file
+git mv fileName1 fileName2
+ 
+

@@ -50,3 +50,7 @@ git log --oneline --graph --decorate --all
 
 // difference  between the recently changes in working directory  and the HEAD position , HEAD :last commit in the branch 
 git diff
+
+//branch
+git branch 
+git checkout -b name of new branch

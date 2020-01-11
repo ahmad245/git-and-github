@@ -62,4 +62,15 @@ git merge new branch
 // delete branch after merge 
 git branch -d new branch
 
-//
+//Saving Work in Progress with Stashing
+git stash 
+git stash list // 
+git stash save "message" // save stash with the name 
+git stash pop // remove the latest stash and retrun it 
+git stash pop stash@{index} ://remove the  stash with index  and retrun it   ex:git stash pop stash@{0}
+git stash apply // return the latest  stash without remove id 
+git stash drop // remove the latest stash 
+git stash drop stash@{index} // remove the  stash with index  ex:git stash drop stash@{0}
+git stash show : for show the latest stash 
+
+

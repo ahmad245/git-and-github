@@ -24,8 +24,14 @@ git status :  all files that  modified or created  and untrack files
 git ls-files : if I do not add  file to stage earia will show  all files tracks but  not the new file was created
 
 // Backing Out Changes unstage
-git reset file name 
-git reset HEAD file name
+// This means that git reset <paths> is the opposite of git add <paths>.
+git reset --hard file name : after changes and before add :in local
+git reset file name : after add . before commit in stage 
+git reset --hard HEAD file name after commit 
+git reset --hard HEAD~1 file name after commit 
+
+// You can change the most recent commit message using the git commit --amend command.
+git commit --amend -m "add new commit and modified the last commit"
 
 // remove modified from file in local 
 git checkout -- file name
@@ -40,7 +46,7 @@ git mv fileName1 fileName2
 // remove file
 git rm file name
 
-//027 Excluding Unwanted Files
+// Excluding Unwanted Files
 touch .gitignore 
 and write the name of file Unwanted to tracks
 *.log Unwanted all file with .log

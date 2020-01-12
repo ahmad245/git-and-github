@@ -8,23 +8,43 @@ ls
 ls -al
 cat file name : edit file 
 
-
+/************************************************************************************************/
 //gitHub basic  Starting with Existing Project
 git init 
 git status 
 git add fileName or *
 git  git commit -m "name of commit"
-
+/************************************************************************************************/
 // commit Details
 git log : for show Commit Details : id of commit , Author and Date
 git show show Commit Details : id of commit , Author , Date and all changes 
-
+/************************************************************************************************/
 // files tracks
 git status :  all files that  modified or created  and untrack files
 git ls-files : if I do not add  file to stage earia will show  all files tracks but  not the new file was created
-
+/************************************************************************************************/
 // Backing Out Changes unstage
+// reset --soft Does not touch the index file or the working at all (but resets the head to <commit>)
+// This leaves all your changed files "Changes to be committed
+// ex if we have 3commit , and i we want to reset to the third commit the first and second will save in satge area
+// and the head will refer the third commit and will not remove the code in file 
+// we do not have to do add . 
+git reset --soft number of commit 
+
+// reset --meixed  by default 
+// if we have 3commit , and i we want to reset to the third commit the first and second will not save in satge area
+// and the head will refer the third commit and will not remove the code in file 
+// we must to do add .
+git reset --meixed 
+
+// reset --hard 
+// if we have 3commit , and i we want to reset to the third commit the first and second will not save in satge area
+// and the head will refer the third commit and will  remove the code from  file 
+// we must to do add .
+git reset --hard 
+
 // This means that git reset <paths> is the opposite of git add <paths>.
+// checkout , reset ,reset --hard ,reset HEAD ,reset HEAD~1, reset --soft
 git reset --hard file name : after changes and before add :in local --hard :remove data from code 
 git reset file name : after add . before commit in stage 
 git reset --hard HEAD file name after commit 
@@ -36,28 +56,29 @@ git commit --amend -m "add new commit and modified the last commit"
 // remove modified from file in local 
 git checkout -- file name
 git checkout number of commit -- file name // return at the commit with number ...
-
+/************************************************************************************************/
 // alias
 git config --global alias.status "st" 
 git congig --global --list all the alias and config global
-
+/************************************************************************************************/
 // rename file
 git mv fileName1 fileName2
-
+/************************************************************************************************/
 // remove file
 git rm file name
-
+/************************************************************************************************/
 // Excluding Unwanted Files
 touch .gitignore 
 and write the name of file Unwanted to tracks
 *.log Unwanted all file with .log
-
+/************************************************************************************************/
 // history 
 git log --oneline --graph --decorate --all
-
+git log --oneline 
+/************************************************************************************************/
 // difference  between the recently changes in working directory  and the HEAD position , HEAD :last commit in the branch 
 git diff
-
+/************************************************************************************************/
 //branch
 git branch 
 git checkout -b name of new branch
@@ -68,7 +89,7 @@ git merge new branch
 
 // delete branch after merge 
 git branch -d new branch
-
+/************************************************************************************************/
 //Saving Work in Progress with Stashing
 git stash 
 git stash list // 

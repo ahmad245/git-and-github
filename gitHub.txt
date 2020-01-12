@@ -25,7 +25,7 @@ git ls-files : if I do not add  file to stage earia will show  all files tracks 
 
 // Backing Out Changes unstage
 // This means that git reset <paths> is the opposite of git add <paths>.
-git reset --hard file name : after changes and before add :in local
+git reset --hard file name : after changes and before add :in local --hard :remove data from code 
 git reset file name : after add . before commit in stage 
 git reset --hard HEAD file name after commit 
 git reset --hard HEAD~1 file name after commit 
@@ -35,6 +35,7 @@ git commit --amend -m "add new commit and modified the last commit"
 
 // remove modified from file in local 
 git checkout -- file name
+git checkout number of commit -- file name // return at the commit with number ...
 
 // alias
 git config --global alias.status "st" 

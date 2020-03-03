@@ -103,3 +103,43 @@ git stash show : for show the latest stash
 git stash show stash@{index}
 git stash clear // remove all stash 
 
+
+/************************************************************************************************/
+
+git init 
+
+git add *
+
+git commit -m ""
+
+git remote -v
+
+git push origin master
+git push -u origin master
+
+
+git pull 
+git pull origin master
+
+show all the info for commit
+git log
+git show commit details
+
+create branch
+git branch 
+git chechout -b newbranch
+
+merge branch
+git chechout master
+git merge newbranch
+
+
+
+
+        <h2>form local to remote</h2>
+        <div> git init</div>
+        <div>git add * </div>
+        <div> git commit -m "create project"</div>
+        <div> git remote add origin https://github.com/ahmad245/templete.git</div>
+        <!-- u: pull and push -->
+        <div> git push -u origin master</div>
